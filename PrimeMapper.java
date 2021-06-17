@@ -26,9 +26,7 @@ public class PrimeMapper extends Mapper<LongWritable, Text, Text, IntWritable> {
 			}
 			if (flag) {
 				context.write(new Text("PrimeSum"), new IntWritable(number));
-			}else {
-				context.write(new Text("Composite"), new IntWritable(number));
-			}
+			}e
 		}
 	}
 }
