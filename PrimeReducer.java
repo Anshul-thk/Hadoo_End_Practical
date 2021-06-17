@@ -18,6 +18,10 @@ public class PrimeReducer extends Reducer<Text, IntWritable, Text, IntWritable> 
 			for (IntWritable value : values) {
 				sum += value.get();
 			}
+		}else{
+			for (IntWritable value : values) {
+				sum += value.get();
+			}
 		}
 	}
 		context.write(key, new IntWritable(sum));
