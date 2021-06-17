@@ -14,6 +14,10 @@ public class Word_Count_Reducer extends Reducer<Text, IntWritable, Text, IntWrit
 		{
 			y ++;
 			
+		}else{
+			for (IntWritable value : values) {
+				sum += value.get();
+			}
 		}
 		context.write(key, new IntWritable(y) );
 		
