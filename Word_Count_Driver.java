@@ -18,9 +18,9 @@ public class Word_Count_Driver {
 
 		Job j = new Job();
 		j.setJobName("My First Job");
-		j.setJarByClass(WordCountDriver.class);
-		j.setMapperClass(WordCountMapper.class);
-		j.setReducerClass(WordCountReducer.class);
+		j.setJarByClass(Word_Count_Driver.class);
+		j.setMapperClass(Word_Count_Mapper.class);
+		j.setReducerClass(Word_Count_Reducer.class);
 		j.setOutputKeyClass(Text.class);
 		j.setOutputValueClass(IntWritable.class);
 
